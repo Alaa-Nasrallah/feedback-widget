@@ -1,2 +1,7 @@
-# feedback-widget
-Feedback collection system with React and Node.js
+# Feedback Widget
+
+A full-stack feedback collection system.
+
+## Structure
+- frontend/: React application
+- backend/: Express API with MongoDB
