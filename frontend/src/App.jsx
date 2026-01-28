@@ -1,5 +1,14 @@
+import React from 'react';
+import './App.css';
+import FeedbackForm from "./components/FeedbackForm";
+
 function App() {
-  return <h1>Hello Lulu 🚀</h1>;
+  return (
+    <div className="app-container">
+      <h1>Feedback Widget</h1>
+      <FeedbackForm />
+    </div>
+  );
 }
 
 export default App;

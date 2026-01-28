@@ -1,4 +1,6 @@
-﻿function StarRating({ rating, setRating }) {
+﻿﻿import React from 'react';
+
+function StarRating({ rating, setRating }) {
   return (
     <div>
       {[1, 2, 3, 4, 5].map((star) => (
