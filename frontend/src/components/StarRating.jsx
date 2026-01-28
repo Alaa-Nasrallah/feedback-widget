@@ -1,25 +1,21 @@
-﻿import React from 'react';
-
-const StarRating = ({ rating, onRate }) => {
+﻿function StarRating({ rating, setRating }) {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+    <div>
       {[1, 2, 3, 4, 5].map((star) => (
         <span
           key={star}
-          onClick={() => onRate(star)}
           style={{
-            cursor: 'pointer',
-            fontSize: '50px',
-            color: star <= rating ? 'GOLD' : 'DARKGRAY',
-            margin: '0 10px',
-            display: 'inline-block'
+            cursor: "pointer",
+            color: star <= rating ? "#FFD700" : "#ccc",
+            fontSize: "2rem",
           }}
+          onClick={() => setRating(star)}
         >
           ★
         </span>
       ))}
     </div>
   );
-};
+}
 
 export default StarRating;
