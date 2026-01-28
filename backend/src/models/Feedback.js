@@ -9,7 +9,8 @@ const feedbackSchema = new mongoose.Schema({
     },
     comment: {
         type: String,
-        maxlength: 500
+        maxlength: 500,
+        default: ''
     },
     createdAt: {
         type: Date,
