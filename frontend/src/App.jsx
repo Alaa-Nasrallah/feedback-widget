@@ -1,12 +1,5 @@
-import FeedbackForm from "./components/FeedbackForm";
-
 function App() {
-  return (
-    <div>
-      <h1>Feedback Widget</h1>
-      <FeedbackForm />
-    </div>
-  );
+  return <h1>Hello Lulu 🚀</h1>;
 }
 
 export default App;
