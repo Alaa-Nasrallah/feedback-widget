@@ -1,4 +1,4 @@
-Create a `.env` file in the `backend` directory:
+raCreate a `.env` file in the `backend` directory:
 
 ```env
 DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/feedback-widget?retryWrites=true&w=majority
@@ -21,3 +21,21 @@ Create a `.env` file in the `frontend` directory:
 ```env
 VITE_API_BASE_URL=https://your-backend-url.onrender.com
 ```
+
+## Deployment
+
+### Frontend (Vercel)
+1. Go to [Vercel](https://vercel.com) and sign up/login
+2. Click "New Project" and import your GitHub repo
+3. Set the root directory to `frontend`
+4. Add environment variable: `VITE_API_BASE_URL` with your backend URL
+5. Deploy
+
+1. Go to [Render](https://render.com) and sign up/login
+2. Click "New +" and select "Web Service"
+3. Connect your GitHub repo
+4. Set the root directory to `backend`
+5. Set build command: `npm install`
+6. Set start command: `node src/index.js`
+7. Add environment variable: `DATABASE_URL` with your MongoDB connection string
+8. Deploy
