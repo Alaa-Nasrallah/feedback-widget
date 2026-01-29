@@ -1,3 +1,8 @@
+/**
+ * Feedback Model
+ * Defines the schema for feedback documents in MongoDB.
+ */
+
 const mongoose = require('mongoose');
 
 const feedbackSchema = new mongoose.Schema({
@@ -18,4 +23,5 @@ const feedbackSchema = new mongoose.Schema({
     }
 });
 
+// Create and export the Feedback model
 module.exports = mongoose.model('Feedback', feedbackSchema);
