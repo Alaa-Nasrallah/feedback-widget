@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 
 // Connect to MongoDB Atlas
 console.log('Connecting to MongoDB Atlas...');
-mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('✅ Connected to MongoDB Atlas!');
     })
