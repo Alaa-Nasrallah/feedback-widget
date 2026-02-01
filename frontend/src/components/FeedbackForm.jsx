@@ -37,8 +37,8 @@ function FeedbackForm() {
 
     try {
       // Get API base URL from environment or default to localhost
-      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
-
+      const API_BASE_URL = "https://feedback-widget-production-9350.up.railway.app";
+      
       // Send POST request to submit feedback
       const response = await fetch(`${API_BASE_URL}/api/feedback`, {
         method: "POST",
