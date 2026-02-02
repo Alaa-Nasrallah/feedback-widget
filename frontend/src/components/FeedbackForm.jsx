@@ -37,7 +37,7 @@ function FeedbackForm() {
 
     try {
       // Get API base URL from environment or default to localhost
-      const API_BASE_URL = "http://local";
+      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
     
       // Send POST request to submit feedback
       const response = await fetch(`${API_BASE_URL}/api/feedback`, {
