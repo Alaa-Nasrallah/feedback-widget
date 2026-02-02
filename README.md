@@ -1,41 +1,20 @@
-raCreate a `.env` file in the `backend` directory:
+# Feedback Widget
 
-```env
-DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/feedback-widget?retryWrites=true&w=majority
-PORT=3001
-```
-=======
-## Environment Variables
+A full‑stack feedback collection app with a simple frontend form and an admin dashboard to view submissions.  
+Built with **React + Vite (frontend)** and **Node.js + Express + MongoDB (backend)**.  
+Deployed on **Netlify (frontend)** and **Railway (backend)**.
 
-### Backend
-Create a `.env` file in the `backend` directory:
+---
 
-```env
-DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/feedback-widget?retryWrites=true&w=majority
-PORT=3001
-```
+## 🚀 Live URLs
+- **Frontend (Netlify):** https://glittery-concha-73fd19.netlify.app/
+- **Backend (Railway):** https://feedback-widget-production-9350.up.railway.app/
 
-### Frontend
-Create a `.env` file in the `frontend` directory:
+---
 
-```env
-VITE_API_BASE_URL=https://your-backend-url.onrender.com
-```
+## 🛠 Tech Stack
+- **Frontend:** React, Vite, Axios, TailwindCSS
+- **Backend:** Node.js, Express, MongoDB (Mongoose)
+- **Deployment:** Netlify (frontend), Railway (backend)
+- **Version Control:** GitHub
 
-## Deployment
-
-### Frontend (Vercel)
-1. Go to [Vercel](https://vercel.com) and sign up/login
-2. Click "New Project" and import your GitHub repo
-3. Set the root directory to `frontend`
-4. Add environment variable: `VITE_API_BASE_URL` with your backend URL
-5. Deploy
-
-### Backend (Railway)
-1. Go to [Railway](https://railway.app) and sign up/login
-2. Click "New Project" and select "Deploy from GitHub repo"
-3. Connect your GitHub repo
-4. Set the root directory to `backend`
-5. Railway will auto-detect Node.js and set build/start commands
-6. Add environment variable: `DATABASE_URL` with your MongoDB connection string
-7. Deploy
